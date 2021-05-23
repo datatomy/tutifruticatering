@@ -430,9 +430,41 @@ footer {
         transition: all 0.4s ease;
         filter: grayscale(0%);
         -webkit-filter: grayscale(0%);
-
+        width: 300px;
+        height: 280px;
     }
-    
+
+    #imagen1 {
+        background-image: url("Imagenes/Reales/1.jpg");
+        border-top-left-radius: 15px;
+    }
+    #imagen2 {
+        background-image: url("Imagenes/Reales/2.jpg");
+        border-top-right-radius: 15px;
+    }
+    #imagen3 {
+        background-image: url("Imagenes/Reales/3.jpg");
+    }
+    #imagen4 {
+        background-image: url("Imagenes/Reales/4.jpg");
+        
+    }
+    #imagen5 {
+        background-image: url("Imagenes/Reales/5.jpg");
+        
+    }
+    #imagen6 {
+        background-image: url("Imagenes/Reales/6.jpg");
+    }
+    #imagen7 {
+        background-image: url("Imagenes/Reales/7.jpg");
+        border-bottom-left-radius: 15px;
+    }
+    #imagen8 {
+        background-image: url("Imagenes/Reales/8.jpg");
+        border-bottom-right-radius: 15px;
+    }
+
     .imagenesReales:hover {
             -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
