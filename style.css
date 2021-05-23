@@ -43,7 +43,6 @@ main {
 
 footer {
     grid-area: footer;
-    background: blue;
 }
 
 
@@ -193,15 +192,15 @@ hr {
 }
 
 #imagenTarjeta1 {
-    background-image: url("/Users/tomas/Downloads/WebTutiFruti/Imagenes/Stock/banquete.png");
+    background-image: url("Imagenes/Stock/banquete.png");
 }
 
 #imagenTarjeta2 {
-    background-image: url("/Users/tomas/Downloads/WebTutiFruti/Imagenes/Stock/plato.png");
+    background-image: url("Imagenes/Stock/plato.png");
 }
 
 #imagenTarjeta3 {
-    background-image: url("/Users/tomas/Downloads/WebTutiFruti/Imagenes/Stock/manosharina.png");
+    background-image: url("Imagenes/Stock/manosharina.png");
 }
 
 .tituloTarjeta {
@@ -272,31 +271,31 @@ hr {
 }
 
 #imagen1 {
-    background-image: url("/Users/tomas/Downloads/WebTutiFruti/Imagenes/Reales/1.jpg");
+    background-image: url("Imagenes/Reales/1.jpg");
     border-top-left-radius: 15px;
 }
 #imagen2 {
-    background-image: url("/Users/tomas/Downloads/WebTutiFruti/Imagenes/Reales/2.jpg");
+    background-image: url("Imagenes/Reales/2.jpg");
 }
 #imagen3 {
-    background-image: url("/Users/tomas/Downloads/WebTutiFruti/Imagenes/Reales/3.jpg");
+    background-image: url("Imagenes/Reales/3.jpg");
 }
 #imagen4 {
-    background-image: url("/Users/tomas/Downloads/WebTutiFruti/Imagenes/Reales/4.jpg");
+    background-image: url("Imagenes/Reales/4.jpg");
     border-top-right-radius: 15px;
 }
 #imagen5 {
-    background-image: url("/Users/tomas/Downloads/WebTutiFruti/Imagenes/Reales/5.jpg");
+    background-image: url("Imagenes/Reales/5.jpg");
     border-bottom-left-radius: 15px;
 }
 #imagen6 {
-    background-image: url("/Users/tomas/Downloads/WebTutiFruti/Imagenes/Reales/6.jpg");
+    background-image: url("Imagenes/Reales/6.jpg");
 }
 #imagen7 {
-    background-image: url("/Users/tomas/Downloads/WebTutiFruti/Imagenes/Reales/7.jpg");
+    background-image: url("Imagenes/Reales/7.jpg");
 }
 #imagen8 {
-    background-image: url("/Users/tomas/Downloads/WebTutiFruti/Imagenes/Reales/8.jpg");
+    background-image: url("Imagenes/Reales/8.jpg");
     border-bottom-right-radius: 15px;
 }
 
