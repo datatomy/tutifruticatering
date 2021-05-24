@@ -5,52 +5,33 @@
 }
 
 body {
-    display: grid;
-    height: auto;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(7, auto);
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "main main main"
-    "main main main"
-    "main main main"
-    "footer footer footer";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 header {
-    grid-area: header;
     background-image: radial-gradient(#fefefe 20%, transparent 20%),
     radial-gradient(#fefefe 20%, transparent 20%);
     background-color: #a8dbd4;
     background-position: 0 0, 50px 50px;
     background-size: 100px 100px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 nav {
-    grid-area: nav;
     background: whitesmoke;
     width: 100%;
 }
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-}
-
 
 #Logo {
     width: 300px;
     padding: 17px;
 }
-
 
 a {
     text-decoration: none;
@@ -61,7 +42,7 @@ a {
     display: flex;
     align-items:center;
     justify-content: center;
-  }
+}
 
 .navbar ul {
     margin: 0;
@@ -70,8 +51,8 @@ a {
     display: flex;
     align-items:center;
     justify-content: center;
-    width: 540px;
-  }
+    width: 100%;
+}
   
 .navbar ul li a {
     color: #5e3d2e;
@@ -81,42 +62,40 @@ a {
     text-align: center;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-  }
+}
 
   
 .navbar ul a:hover,
 .navbar ul a:focus {
     background: #5e3d2e;
     color: whitesmoke;
-  }
-
-.imagenPresentacion {
-    width: 720px;
-    height: 520px;
-    justify-content: left;
 }
 
-.cuadroPresentacion {
+
+.seccionPresentacion {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vp;
 }
 
 #fondoPresentacion {
-    width: 720px;
+    width: 50%;
     height: 520px;
-    justify-content: left;
-    align-items: flex-start;
+    background-image: url("Imagenes/Stock/FondoPresentacion.jpg");
+    background-size: cover;
 }
 
 .textoPresentacion {
-    width: 720px;
+    width: 50%;
     height: 520px;
     background-image: linear-gradient(125deg, #ffae6c 0, #ffa16e 12.5%, #ff946f 25%, #ff866f 37.5%, #ef786d 50%, #dc6b6a 62.5%, #ca6068 75%, #ba5766 87.5%, #ab4f64 100%);
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     flex-direction: column;
-    padding: 250px;
 }
 
 .textoPresentacion > h1 {
@@ -178,17 +157,14 @@ hr {
 }
 
 .imagenTarjeta {
-    width: 400px;
+    width: 100%;
     height: 200px;
     padding: 0;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     float: center;
     background-size: cover;
-    box-shadow: black 0px 3px 15px;
-    border-top: 2px solid #ef796d;
     margin-left: -2px;
-    margin-top: -2px;
 }
 
 #imagenTarjeta1 {
@@ -222,7 +198,7 @@ hr {
 }
 
 .envioGratis {
-    width: 100vp;
+    width: 100%;
     height: 60px;
     background-image: linear-gradient(125deg, #ffae6c 0, #ffa16e 12.5%, #ff946f 25%, #ff866f 37.5%, #ef786d 50%, #dc6b6a 62.5%, #ca6068 75%, #ba5766 87.5%, #ab4f64 100%);
     border-radius: 15px;
@@ -252,22 +228,14 @@ hr {
         align-items: center;
         margin-top: 50px;
         margin-bottom: 50px;
-        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
         border-radius: 15px;
 }
 
 .imagenesReales {
     width: 335px;
     height: 300px;
-    transition: all 0.4s ease;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
     background-size: cover;
-}
-
-.imagenesReales:hover {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 
 #imagen1 {
@@ -337,6 +305,17 @@ form{
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
+    font-family: 'PT Serif', serif;
+}
+
+form > p {
+    font-family: 'PT Serif', serif;
+    font-size: 2.5rem;
+    color: black;
+    text-shadow: whitesmoke 2px 5px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
 }
 
 form label{
@@ -349,7 +328,7 @@ form label{
 form input[type="text"],
 form input[type="email"]{
 	width:100%;
-	padding:3px 10px;
+	padding:5px;
 	border:1px solid #f6f6f6;
 	border-radius:3px;
 	background-color:#f6f6f6;
@@ -362,11 +341,10 @@ form input[type="submit"]{
 	width:100%;
 	padding:8px 16px;
 	margin-top:32px;
-	border:1px solid #000;
 	border-radius:5px;
 	display:block;
 	color:#fff;
-	background-color:#000;
+	background-color:rgb(60, 223, 60);
     font-family: 'PT Serif', serif;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 } 
@@ -386,10 +364,27 @@ textarea{
 	resize:none;
 	display:block;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    padding: 5px;
 }
 
 
 .seguinos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.tituloSeguinos {
+    font-family: 'PT Serif', serif;
+    font-size: 3rem;
+    color: whitesmoke;
+    text-shadow: black 2px 5px;
+    margin: 25px;
+}
+
+.container-redes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,13 +400,13 @@ textarea{
     filter: drop-shadow(5px 5px 20px rgba(0,0,0,0.6));
 }
 
-
 footer {
     background-color: #5e3d2e;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
+    width: 100%;
 }
 
 .parrafoFooter {
@@ -420,57 +415,4 @@ footer {
     font-size: 15px;
     text-shadow: 5px 5px 10px #5e3d2e;
     margin: 5px;
-}
-
-@media (max-width: 500px) {
-    .containerImagenes {
-        box-shadow: none;
-    }
-    .imagenesReales {
-        transition: all 0.4s ease;
-        filter: grayscale(0%);
-        -webkit-filter: grayscale(0%);
-        width: 300px;
-        height: 280px;
-    }
-
-    #imagen1 {
-        background-image: url("Imagenes/Reales/1.jpg");
-        border-top-left-radius: 15px;
-    }
-    #imagen2 {
-        background-image: url("Imagenes/Reales/2.jpg");
-        border-top-right-radius: 15px;
-    }
-    #imagen3 {
-        background-image: url("Imagenes/Reales/3.jpg");
-    }
-    #imagen4 {
-        background-image: url("Imagenes/Reales/4.jpg");
-        
-    }
-    #imagen5 {
-        background-image: url("Imagenes/Reales/5.jpg");
-        
-    }
-    #imagen6 {
-        background-image: url("Imagenes/Reales/6.jpg");
-    }
-    #imagen7 {
-        background-image: url("Imagenes/Reales/7.jpg");
-        border-bottom-left-radius: 15px;
-    }
-    #imagen8 {
-        background-image: url("Imagenes/Reales/8.jpg");
-        border-bottom-right-radius: 15px;
-    }
-
-    .imagenesReales:hover {
-            -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-    }
-
-    .containerTarjetas {
-        justify-content: center;
-    }
 }
