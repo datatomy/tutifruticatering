@@ -432,3 +432,40 @@ footer {
     margin: 5px;
     text-align: center;
 }
+
+@media (min-width: 1280px) {
+   
+    #fotoPresentacion {
+        width: 50%;
+        height: 550px;
+    }
+    
+    .textoPresentacion {
+        width: 50%;
+        height: 550px;
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+   
+    #fotoPresentacion {
+        width: 50%;
+        height: 400px;
+    }
+    
+    .textoPresentacion {
+        width: 50%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 800px) {
+   
+    .seccionPresentacion {
+        flex-direction: column;
+    }
+    .textoPresentacion {
+        height: 600px;
+    }
+}
