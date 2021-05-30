@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="mediaquery.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link  rel="icon"   href="Logos/Logo Corto PNG.png" type="image/png">
@@ -15,7 +16,9 @@
             <img src="Logos/PNG Logo.png" alt="Logo Largo" id="Logo">
         </div>
     </header>
-    <nav class="navbar">
+    <nav class="blend">
+        <input type="checkbox" id="menu">
+        <label for="menu" class="hamburguesa"> ☰ </label>
         <ul>
           <li><a href="#seccionTarjetas">Servicios</a></li>
           <li><a href="#seccionImagenes">Fotos</a></li>
@@ -23,37 +26,37 @@
         </ul>
     </nav>
     <main>
-        <div class="seccionPresentacion">
+        <section class="seccionPresentacion">
             <img src="Imagenes/Stock/FondoPresentacion.jpg" alt="Foto Presentacion" id="fotoPresentacion">
             <div class="textoPresentacion">
                 <h1>Rico.</h1>        
                 <h1>Casero.</h1>
                 <h1>Económico.</h1>
                 <br>
-                <br>
-                <br>
+                <br id="brInvisible">
                 <h4 class="h4dePresentacion">Hecho con manos correntinas.</h4>
             </div>
-        </div>
+        </section>
 
-        <div class="seccionTarjetas" id="seccionTarjetas">
+        <section class="seccionTarjetas" id="seccionTarjetas">
             <div class="separador">
                 <h4 class="h4dePresentacion">Lo que vos necesites.</h4>
                 <hr> 
             </div>
             <div class="containerTarjetas">
                 <div class="tarjeta">
-                    <div class="imagenTarjeta" id="imagenTarjeta1"></div>
+                    <div class="imagenTarjeta"><img src="Imagenes/Stock/banquete.png" alt="Banquete" class="imgTarjeta"></div>
                     <h3 class="tituloTarjeta">Eventos y reuniones</h3>
                     <p class="parrafoTarjeta">Nos encargamos de la gastronomía para tu evento social, cumpleaños, aniversario, bautismo, casamiento, etc.</p>
                 </div>
                 <div class="tarjeta">
-                    <div class="imagenTarjeta" id="imagenTarjeta2"></div>
+                    <div class="imagenTarjeta"><img src="Imagenes/Stock/plato.png" alt="Plato de Comida" class="imgTarjeta"></div>
                     <h3 class="tituloTarjeta">Comidas semanales</h3>
-                    <p class="parrafoTarjeta">¿No tenes tiempo de cocinar y no queres comer siempre lo mismo? Nosotros te preparamos almuerzos/cenas para toda la semana.</p>   
+                    <p class="parrafoTarjeta" id="pTarjetachico">¿Sin tiempo de cocinar? Nosotros te preparamos almuerzos variados para toda la semana.</p>
+                    <p class="parrafoTarjeta" id="pTarjetagrande">¿No tenés tiempo de cocinar y no querés comer siempre lo mismo? Nosotros te preparamos almuerzos variados para toda la semana.</p>   
                 </div>
                 <div class="tarjeta">
-                    <div class="imagenTarjeta" id="imagenTarjeta3"></div>
+                    <div class="imagenTarjeta"><img src="Imagenes/Stock/manosharina.png" alt="Cocina" class="imgTarjeta"></div>
                     <h3 class="tituloTarjeta">Salado y dulce</h3>
                     <p class="parrafoTarjeta">¿Querés probar nuestra cocina? Empanadas, sorrentinos, canelones, tartas, tortas, postres y mucho más.</p>
                 </div>
@@ -61,12 +64,12 @@
             <div class="envioGratis">
                 <p>Envío gratis dentro de Mar del Plata.</p>
             </div>
-        </div>
+        </section>
 
-        <div class="seccionImagenes" id="seccionImagenes">
-            <div class="separador">
-                <h4 class="h4dePresentacion">Si, las fotos son reales!</h4>
-                <hr> 
+        <section class="seccionImagenes" id="seccionImagenes">
+            <div class="separador" id="separador2">
+                <h4 class="h4dePresentacion" id="separadorH4img">Si, las fotos son reales!</h4>
+                <hr id="separadorH4hr"> 
             </div>
             <div class="containerImagenes">
                 <div class="imagenesReales" id="imagen1"></div>
@@ -78,18 +81,19 @@
                 <div class="imagenesReales" id="imagen7"></div>
                 <div class="imagenesReales" id="imagen8"></div>
             </div>
-        </div>
-        <div class="seccionContactanos" id="seccionContactanos">
+        </section>
+        <section class="seccionContactanos" id="seccionContactanos">
             <div class="contactanos">
-                <form action="#" target="" method="get" name="formDatosPersonales">
+                <form action="mailto:data_tomy@hotmail.com" enctype="text/plain" target="" method="post" name="formDatosPersonales">
                 <p>Contactanos</p>
                 <label for="nombre">Nombre y apellido</label>
                 <input type="text" name="nombre" id="nombre" required/>
-                <label for="email" />Mail</label>
+                <label for="email">Mail</label>
                 <input type="email" name="email" id="email" required/>
                 <label for="mensaje">Mensaje</label>
                 <textarea name="mensaje" for="mensaje" maxlength="300"></textarea>
                 <input type="submit" name="enviar" value="Enviar"/>
+                <!-- - formspree.io - tutifruticatering@gmail.com tutifruti - -->
                 </form>
             </div>
             <div class="seguinos">
@@ -99,13 +103,13 @@
                 <div class="container-redes">
                     <a href="https://www.instagram.com/tuti.fruti.catering/" target="_blank"><img src="Imagenes/Redes/instagram.png" alt="Logo Instagram" class="redes"></a>
                     <a href="https://www.facebook.com/tuti.fruti.catering/" target="_blank"><img src="Imagenes/Redes/facebook.png" alt="Logo Facebook" class="redes"></a>
-                    <img src="Imagenes/Redes/whatsapp.png" alt="Logo Whatsapp" class="redes">
+                    <a href="https://www.wa.link/grbvui" target="_blank"><img src="Imagenes/Redes/whatsapp.png" alt="Logo Whatsapp" class="redes"></a>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
-        <p class="parrafoFooter">Mar del Plata, Buenos Aires, Argentina | Hecho por Tomás Alvarez.</p>
+        <p class="parrafoFooter">Mar del Plata, Buenos Aires, Argentina | Hecho por <a href="https://github.com/datatomy" target="_blank" class="datatomy">datatomy</a>.</p>
     </footer>
 </body>
 </html>
