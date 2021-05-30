@@ -1,3 +1,15 @@
+@media (min-width: 100px) and (max-width: 319px) {    
+    .envioGratis > p {
+    font-size: 80%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 399px) {    
+    .envioGratis > p {
+    font-size: 15px;
+    }
+}
+
 @media (min-width: 400px) {
     .parrafoTarjeta {
         margin: 15px;
@@ -83,6 +95,10 @@
         margin: 15px 10px;
         height: 400px;
         width: 300px;
+    }
+    .parrafoTarjeta {
+        margin: 5px;
+        padding: 0px 0px 20px 0px;
     }
     .containerImagenes {
         height: 1300px;

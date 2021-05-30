@@ -268,7 +268,7 @@ hr {
 
 .parrafoTarjeta {
     margin: 5px;
-    padding-bottom: 20px;
+    padding: 0px 10px 15px 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     text-align: center;
@@ -293,7 +293,7 @@ hr {
 .envioGratis > p {
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
-    font-size: 90%;
+    font-size: 16px;
     text-shadow: 5px 5px 10px #5e3d2e;
 }
 
