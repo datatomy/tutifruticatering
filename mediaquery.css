@@ -1,12 +1,18 @@
 @media (min-width: 100px) and (max-width: 319px) {    
     .envioGratis > p {
-    font-size: 80%;
+        font-size: 80%;
+    }
+    .parrafoFooter {
+        font-size: 60%;
     }
 }
 
 @media (min-width: 320px) and (max-width: 399px) {    
     .envioGratis > p {
     font-size: 15px;
+    }
+    .parrafoFooter {
+        font-size: 60%;
     }
 }
 
@@ -23,6 +29,9 @@
     .redes {
         width: 100px;
         height: 100px;
+    }
+    .parrafoFooter {
+        font-size: 80%;
     }
 }
 
@@ -64,6 +73,9 @@
     }
     nav ul {
         display: inline-block;
+    }
+    .parrafoFooter {
+        font-size: 15px;
     }
 }
 
