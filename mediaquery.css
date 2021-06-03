@@ -23,9 +23,6 @@
     .envioGratis > p {
         font-size: 18px;
     }
-    .containerImagenes {
-        height: 800px;
-    }
     .redes {
         width: 100px;
         height: 100px;
@@ -79,6 +76,16 @@
     }
 }
 
+@media (min-width: 640px) {
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 33vw);
+    }
+    #divImagen8 {
+        grid-column: 2 / 4;
+    }
+}
+
 @media (min-width: 655px) {
     .containerTarjetas {
         flex-direction: row;
@@ -90,9 +97,6 @@
     }
     .contactanos {
         padding: 50px;
-    }
-    .containerImagenes {
-        height: 1000px;
     }
 }
 
@@ -111,9 +115,6 @@
     .parrafoTarjeta {
         margin: 5px;
         padding: 0px 0px 20px 0px;
-    }
-    .containerImagenes {
-        height: 1300px;
     }
     .seccionContactanos {
         justify-content: center;
@@ -139,26 +140,6 @@
         margin: 15px;
         height: 400px;
         width: 400px;
-    }
-    .containerImagenes {
-            flex-direction: row;
-            height: 850px;
-    }
-    .imagenesReales {
-        width: 33.33%;
-        height: 33.33%;
-    }
-    #imagen3 {
-        border-top-right-radius: 15px;
-    }
-    #imagen5 {
-        border-top-right-radius: 0px;
-    }
-    #imagen6 {
-        border-bottom-right-radius: 15px;
-    }
-    #imagen7 {
-        border-bottom-left-radius: 15px;
     }
     .envioGratis > p {
         font-size: 25px;
@@ -190,6 +171,13 @@
     .textoPresentacion > h4 {
         font-size: 20px;
     }
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 27vw);
+    }
+    #divImagen8 {
+        grid-column: 4 / 5;
+    }
 }
 
 @media (min-width: 1250px) {
@@ -216,17 +204,6 @@
     #separadorH4hr {
         margin: 0px 50px 25px 50px;
     }
-    .containerImagenes {
-        flex-direction: row;
-        height: 700px;
-    }
-    .imagenesReales {
-        width: 25%;
-        height: 50%;
-    }
-    #imagen1,#imagen2,#imagen3,#imagen4,#imagen5,#imagen6,#imagen7,#imagen8 {
-        border-radius: 0px;
-    }      
     .contactanos {
         display: flex;
         justify-content: center;
